@@ -10,6 +10,7 @@ class TaxSystemTest {
     @org.junit.jupiter.api.Test
     void calcTaxFor() {
         // given:
+        int a;
         int debit = 300;
         int credit = 200;
         // when:
