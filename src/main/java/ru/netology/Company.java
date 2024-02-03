@@ -4,18 +4,15 @@ public class Company {
     public String title;
     public int debit;
     public int credit;
-    private TaxSystem taxSystem;
+    public TaxSystem taxSystem;
 
-    public void setTaxSystem(TaxSystem taxSystem) {
-        this.taxSystem = taxSystem;
-    }
 
     public Company(String title, TaxSystem taxSystem) {
         this.title = title;
         this.taxSystem = taxSystem;
     }
 
-    protected void shiftMoney(int amount) {
+    public void shiftMoney(int amount) {
         if (amount > 0) {
             debit += amount;
         } else {
