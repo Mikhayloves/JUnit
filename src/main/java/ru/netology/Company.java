@@ -19,7 +19,6 @@ public class Company {
             credit += Math.abs(amount);
         }
     }
-
     public void payTaxes() {
         int result = taxSystem.calcTaxFor(debit, credit);
         System.out.println("Компания " + title + " уплатила налог в размере:" + result + " руб.");

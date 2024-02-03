@@ -8,13 +8,15 @@ class IncomeTest {
         Income income = new Income();
     @org.junit.jupiter.api.Test
     void calcTaxFor() {
+        TaxSystem taxSystem = new Income();
+        Company company = new Company("Шевроле", taxSystem);
         // given:
-        int debit = 300;
-        int credit = 200;
+        int debit = 500;
+        int credit = 500;
         // when:
         int result = income.calcTaxFor(debit,credit);
 
         // then:
-        assertEquals(18,result);
+        assertEquals(30,result);
     }
 }

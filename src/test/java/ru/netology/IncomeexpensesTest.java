@@ -9,8 +9,8 @@ class IncomeexpensesTest {
     @org.junit.jupiter.api.Test
     void calcTaxFor() {
         // given:
-        int debit = 300;
-        int credit = 200;
+        int debit = 2500;
+        int credit = 2500;
         // when:
         int result = incomeexpenses.calcTaxFor(debit,credit);
         // then:
